@@ -1,0 +1,79 @@
+.hero {
+    font-size: 40px;
+    background-color: teal;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heroCard {
+    background-color: black;
+    color: teal;
+    height: 85%;
+    width: 90%;
+    display: flex;
+    border-radius: 15px;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  
+  .textBox {
+    width: 50%;
+    height: 100%;
+    margin-left: 60px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* background-color: red; */
+  }
+  
+  .imageBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+  }
+  
+  .heading {
+    color: rgb(192, 192, 192);
+  }
+  
+  .cta {
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: teal;
+    padding: 10px 50px;
+    border-radius: 50px;
+    margin-left: 30%;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    @media only screen and (max-width:768px) {
+      .hero {
+        overflow: hidden;
+      }
+      .heroCard{
+        flex-direction: column;
+        width: 85%;
+      }
+      img{
+        width: 250px;
+        height: 250px;
+      }
+      .imageBox{
+        padding: 16px;
+      }
+      .textBox {
+        width: 100%;
+      }
+      .heading {
+        font-size: 2.5rem;
+      }
+      .desc {
+        font-size: 1rem;
+      }
+    }
+  }
